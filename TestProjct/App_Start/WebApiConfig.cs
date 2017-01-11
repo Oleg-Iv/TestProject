@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace TestProjct
+namespace TestProject
 {
 	public static class WebApiConfig
 	{

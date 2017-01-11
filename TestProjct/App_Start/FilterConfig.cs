@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace TestProjct
+namespace TestProject
 {
 	public class FilterConfig
 	{

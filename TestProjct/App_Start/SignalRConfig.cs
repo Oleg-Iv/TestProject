@@ -1,7 +1,7 @@
 ﻿using Owin;
 
-//[assembly: OwinStartup(typeof(TestProjct.Startup))]
-namespace TestProjct
+//[assembly: OwinStartup(typeof(TestProject.Startup))]
+namespace TestProject
 {
 	public class Startup
 	{

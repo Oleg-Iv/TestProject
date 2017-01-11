@@ -1,12 +1,12 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
 using System.Web.Security;
-using TestProjct.Helpers;
-using TestProjct.Hubs;
-using TestProjct.Models;
-using TestProjct.Repository;
+using TestProject.Helpers;
+using TestProject.Hubs;
+using TestProject.Models;
+using TestProject.Repository;
 
-namespace TestProjct.Controllers
+namespace TestProject.Controllers
 {
 	public class UserController : Controller
 	{
@@ -26,7 +26,7 @@ namespace TestProjct.Controllers
 			{
 				return RedirectToAction("Index", "Home");
 			}
-			UserModels user = _userRepository.GetUser(model);
+			UserModels user = _userRepository.GetUser(model.Mail, model.Password);
 			if (user == null)
 			{
 				ViewBag.error = "Invalid Email or Password";

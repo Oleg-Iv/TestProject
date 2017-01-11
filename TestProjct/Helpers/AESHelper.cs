@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace TestProjct.Helpers
+namespace TestProject.Helpers
 {
 	[Obsolete]
 	public static class AESHelper

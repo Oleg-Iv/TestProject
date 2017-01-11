@@ -1,9 +1,9 @@
 ﻿using System.Web.Mvc;
-using TestProjct.Helpers;
-using TestProjct.Hubs;
-using TestProjct.Models;
+using TestProject.Helpers;
+using TestProject.Hubs;
+using TestProject.Models;
 
-namespace TestProjct.Controllers
+namespace TestProject.Controllers
 {
 	public class MasterPageController : Controller
 	{

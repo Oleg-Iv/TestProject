@@ -2,10 +2,10 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR;
-using TestProjct.Models;
-using TestProjct.Repository;
+using TestProject.Models;
+using TestProject.Repository;
 
-namespace TestProjct.Hubs
+namespace TestProject.Hubs
 {
 	public class MainHub : Hub
 	{

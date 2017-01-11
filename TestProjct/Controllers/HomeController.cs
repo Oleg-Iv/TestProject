@@ -1,8 +1,8 @@
 ﻿using System.Web.Mvc;
-using TestProjct.Helpers;
-using TestProjct.Models;
+using TestProject.Helpers;
+using TestProject.Models;
 using System.Threading;
-namespace TestProjct.Controllers
+namespace TestProject.Controllers
 {
 	public class HomeController : Controller
 	{

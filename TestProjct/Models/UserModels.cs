@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TestProjct.Models
+namespace TestProject.Models
 {
     /*
      * Roles is a enumeration for create user role

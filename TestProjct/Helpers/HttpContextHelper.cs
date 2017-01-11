@@ -1,8 +1,8 @@
 ﻿using System.Web;
-using TestProjct.Models;
-using TestProjct.Repository;
+using TestProject.Models;
+using TestProject.Repository;
 
-namespace TestProjct.Helpers
+namespace TestProject.Helpers
 {
 	public static class HttpContextHelper
 	{

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using TestProjct.Models;
+using TestProject.Models;
 
-namespace TestProjct.Repository
+namespace TestProject.Repository
 {
 	public class UserRepository
 	{

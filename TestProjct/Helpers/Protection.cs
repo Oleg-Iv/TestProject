@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace TestProjct.Helpers
+namespace TestProject.Helpers
 {
 	/// <summary>
 	/// Get this functionality from http://stackoverflow.com/

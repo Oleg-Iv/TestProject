@@ -1,4 +1,4 @@
-﻿@using TestProjct.Helpers;
+﻿@using TestProject.Helpers;
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -20,7 +20,7 @@
 <script>
 	var chat;
 	var token = '@HttpContextHelper.UserToken';
-	var ReloadMassegeConst = '@TestProjct.Hubs.MainHub.ReloadMassegeConst';
+	var ReloadMassegeConst = '@TestProject.Hubs.MainHub.ReloadMassegeConst';
 </script>
 <div class="container">
 	<nav class="navbar navbar-default">
@@ -38,7 +38,7 @@
 				<ul class="nav navbar-nav">
 					@if (HttpContextHelper.IsAutorize)
 					{
-						if (HttpContextHelper.GetcurrentUser().Roles == TestProjct.Models.Roles.MusterUser)
+						if (HttpContextHelper.GetcurrentUser().Roles == TestProject.Models.Roles.MusterUser)
 						{
 							<li><a href="/MasterPage/Index">Master Page</a></li>
 						}

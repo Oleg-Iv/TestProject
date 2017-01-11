@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
 
-namespace TestProjct.Models
+namespace TestProject.Models
 {
 	/* A TestDbContext instance represents a combination of the Unit Of Work and 
      * Repository patterns such that it can be used to query from a database and 
@@ -14,7 +14,7 @@ namespace TestProjct.Models
 			Database.SetInitializer<TestDbContext>(new DropCreateDatabaseIfModelChanges<TestDbContext>());
 
 			// Add defult users
-			UserModels firstuser = Users.Find(1);
+			UserModels firstuser = Users.Find(0);
 			if (firstuser == null)
 			{
 				UserModels user1 = new UserModels
