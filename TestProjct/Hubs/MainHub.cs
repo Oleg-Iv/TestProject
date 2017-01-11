@@ -42,7 +42,7 @@ namespace TestProject.Hubs
 				//if Muster login in the system send info about this user to him
 				UserModels musterUser = ActiveUserList.FirstOrDefault(n => n.Roles == Roles.MusterUser);
 				if (musterUser != null)
-					Clients.User(musterUser.Id.ToString()).onNewUserConnected(token, user.Name);
+					Clients.User(musterUser.Token).onNewUserConnected(token, user.Name);
 			}
 			else
 			{
@@ -67,7 +67,7 @@ namespace TestProject.Hubs
 				//if Muster login in the system send info about this user to him
 				UserModels musterUser = ActiveUserList.FirstOrDefault(n => n.Roles == Roles.MusterUser);
 				if (musterUser != null)
-					Clients.User(musterUser.Id.ToString()).onUserDisconnected(id);
+					Clients.User(musterUser.Token).onUserDisconnected(id);
 			}
 
 			return base.OnDisconnected(stopCalled);
