@@ -1,0 +1,26 @@
+﻿@model TestProjct.Models.UserModels
+@{
+	ViewBag.Title = "Welcome";
+}
+
+<h2>Welcome</h2>
+
+<ul>
+	<li>Name : @Model.Name</li>
+	<li>Mail : @Model.Mail</li>
+	<li>Role : @Model.Roles</li>
+</ul>
+
+<div class="form-group">
+	<label for="ustring">Your String</label>
+	<input class="form-control" name="ustring" value="" id="ustring">
+</div>
+<div class="form-group">
+	<label for="random">Random Key</label>
+	<input class="form-control" name="random" id="random">
+</div>
+<div class="form-group">
+	<label for="decrypt">Decrypt Key</label>
+	<input class="form-control" name="decrypt" id="decrypt">
+</div>
+<button id="StartEnctipted" class="btn btn-primary">Start Enctipted</button>

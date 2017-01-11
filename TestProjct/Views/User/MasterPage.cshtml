@@ -1,0 +1,18 @@
+﻿@model List<TestProjct.Models.UserModels>
+@{
+    ViewBag.Title = "MasterPage";
+}
+
+<h2>Master Page Controle</h2>
+<div class="form-group">
+    <label for="message">Message:</label>
+    <input type="text" class="form-control" id="message">
+</div>
+
+<ul id="chatusers" class="list-group">
+
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item" id="@item.Id">@item.Name <button class="btn btn-danger" sendtype="Logout">Logout</button> <button class="btn btn-info" sendtype="Messege">Messege</button> </li>
+    }
+</ul>
