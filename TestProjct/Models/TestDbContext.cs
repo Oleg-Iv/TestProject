@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
 
 namespace TestProject.Models
 {
@@ -11,11 +12,26 @@ namespace TestProject.Models
 		public TestDbContext()
 			: base("TestDbContext")
 		{
-			Database.SetInitializer<TestDbContext>(new DropCreateDatabaseIfModelChanges<TestDbContext>());
+			Database.SetInitializer(new TestDbInitializer());
 
-			// Add defult users
-			UserModels firstuser = Users.Find(0);
-			if (firstuser == null)
+		}
+
+		protected override void OnModelCreating(DbModelBuilder mb)
+		{
+			// Code here
+		}
+
+
+		// virtual collection used to get and set data base  
+		public virtual DbSet<UserModels> Users { get; set; }
+	}
+
+	public class TestDbInitializer : DropCreateDatabaseIfModelChanges<TestDbContext>
+	{
+		protected override void Seed(TestDbContext context)
+		{
+
+			if (context.Users.Count()== 0)
 			{
 				UserModels user1 = new UserModels
 				{
@@ -40,14 +56,11 @@ namespace TestProject.Models
 				};
 				List<UserModels> listUser = new List<UserModels> {user1, user2, user3};
 
-				Users.AddRange(listUser);
-				base.SaveChanges();
+				context.Users.AddRange(listUser);
+				context.SaveChanges();
 			}
+			base.Seed(context);
+
 		}
-
-
-
-		// virtual collection used to get and set data base  
-		public virtual DbSet<UserModels> Users { get; set; }
 	}
 }

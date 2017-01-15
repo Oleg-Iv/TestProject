@@ -10,7 +10,7 @@ namespace TestProject.Repository
 		// List for user is  potentioly login
 		private static readonly List<UserModels> UserList = new List<UserModels>();
 		// Use DbContext
-		private readonly TestDbContext _db = new TestDbContext();
+		private TestDbContext _db;
 
 		// get user by token
 		public UserModels GetByToken(string token)
@@ -26,6 +26,7 @@ namespace TestProject.Repository
 			var user = UserList.FirstOrDefault(u => u.Mail == mail && u.Password == password);
 			if (user == null)
 			{
+				 _db = new TestDbContext();
 				// get user from database
 				user = _db.Users.FirstOrDefault(u => u.Mail == mail && u.Password == password);
 				if (user == null)

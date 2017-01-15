@@ -22,6 +22,32 @@
 	var token = '@HttpContextHelper.UserToken';
 	var ReloadMassegeConst = '@TestProject.Hubs.MainHub.ReloadMassegeConst';
 </script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://travistidwell.com/jsencrypt/bin/jsencrypt.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	@*<script src="~/Scripts/bootstrap.min.js"></script>*@
+	<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+	<script src="~/Scripts/jquery.signalR-2.2.1.min.js"></script>
+    <script type="text/javascript" language="JavaScript" src="~/Scripts/System/System.debug.js"></script>
+    <script type="text/javascript" language="JavaScript" src="~/Scripts/System/System.IO.debug.js"></script>
+    <script type="text/javascript" language="JavaScript" src="~/Scripts/System/System.Text.debug.js"></script>
+    <script type="text/javascript" language="JavaScript" src="~/Scripts/System/System.Convert.debug.js"></script>
+    <script type="text/javascript" language="JavaScript" src="~/Scripts/System/System.BitConverter.debug.js"></script>
+    <script type="text/javascript" language="JavaScript" src="~/Scripts/System/System.BigInt.debug.js"></script>
+    <script type="text/javascript" language="JavaScript" src="~/Scripts/System/System.Security.Cryptography.SHA1.debug.js"></script>
+    <script type="text/javascript" language="JavaScript" src="~/Scripts/System/System.Security.Cryptography.debug.js"></script>
+    <script type="text/javascript" language="JavaScript" src="~/Scripts/System/System.Security.Cryptography.RSA.debug.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-utf16-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+
+	<script src="~/Scripts/jsencrypt.js"></script>
+	<script src="~/signalr/hubs"></script>
+	<script src="~/Scripts/util.js"></script>
 <div class="container">
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
@@ -57,18 +83,6 @@
 		@RenderBody()
 	</div>
 </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="~/Scripts/bootstrap.min.js"></script>
-<script src="~/Scripts/jquery-1.9.1.min.js"></script>
-<script src="~/Scripts/jquery.signalR-2.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core-min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-utf16-min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-<script src="~/signalr/hubs"></script>
-<script src="~/Scripts/util.js"></script>
-<script src="~/Scripts/Main.js"></script>
-</body>
+    
+        </body>
 </html>

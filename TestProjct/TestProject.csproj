@@ -183,11 +183,22 @@
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\cryptico.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery.signalR-2.2.1.js" />
     <Content Include="Scripts\jquery.signalR-2.2.1.min.js" />
+    <Content Include="Scripts\jsencrypt.js" />
     <Content Include="Scripts\Main.js" />
+    <Content Include="Scripts\System\System.BigInt.debug.js" />
+    <Content Include="Scripts\System\System.BitConverter.debug.js" />
+    <Content Include="Scripts\System\System.Convert.debug.js" />
+    <Content Include="Scripts\System\System.debug.js" />
+    <Content Include="Scripts\System\System.IO.debug.js" />
+    <Content Include="Scripts\System\System.Security.Cryptography.debug.js" />
+    <Content Include="Scripts\System\System.Security.Cryptography.RSA.debug.js" />
+    <Content Include="Scripts\System\System.Security.Cryptography.SHA1.debug.js" />
+    <Content Include="Scripts\System\System.Text.debug.js" />
     <Content Include="Scripts\util.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
